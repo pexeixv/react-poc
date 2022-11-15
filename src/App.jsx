@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import AddUser from "./pages/Users/Add";
 import ViewUser from "./pages/Users/View";
 import EditUser from "./pages/Users/Edit";
+import DeleteUser from "./pages/Users/Delete";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/users/add" element={<AddUser />} />
         <Route exact path="/users/edit/:id" element={<EditUser />} />
         <Route exact path="/users/:id" element={<ViewUser />} />
+        <Route exact path="/delete/:id" element={<DeleteUser />} />
         <Route exact path="*" element={<NotFound />} />
       </Routes>
     </div>
